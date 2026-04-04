@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLinkWithHref } from '@angular/router';
+import { Headercomponent } from "./components/headercomponent/headercomponent";
+import { DataBindingTypes } from './components/data-binding-types/data-binding-types';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Headercomponent, RouterLinkWithHref],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

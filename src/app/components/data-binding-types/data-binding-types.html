@@ -1,0 +1,35 @@
+<div class="container mt-5">
+  <!-- String Interpolation -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h3 class="card-title text-primary">String Interpolation - double curly braces</h3>
+      <p class="card-text fs-5">{{ sourceString }}</p>
+    </div>
+  </div>
+
+  <!-- Property Binding -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h3 class="card-title text-success">Property Binding - [src]="imageurl"</h3>
+      <img [src]="imageurl" alt="somesampleimage" class="img-fluid rounded mt-2">
+    </div>
+  </div>
+
+  <!-- Event Binding -->
+  <div class="card mb-4 shadow-sm">
+    <div class="card-body">
+      <h3 class="card-title text-warning">Event Binding - (click)="submitworker()"</h3>
+      <button class="btn btn-primary mt-2" (click)="submitworker()">Click Me</button>
+    </div>
+  </div>
+
+  <!-- Name Input -->
+  <div class="card p-4 shadow-sm mb-4" style="max-width: 400px; margin:auto;">
+    <h3 class="card-title mb-3 text-center text-primary">Two way binding [(ngModel)]="firstName"</h3>
+    <input type="text" [(ngModel)]="firstName" class="form-control mb-3" placeholder="Enter your name">
+    <p class="fs-5 text-center">Hello, {{ firstName }}!</p>
+  </div>
+ 
+</div>
+
+

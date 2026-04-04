@@ -1,0 +1,24 @@
+<div class="container mt-5">
+  <div class="row">
+    
+
+    <!-- Parent Component Section -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-body">
+          <h4 class="card-title text-info">Home / Parent Component</h4>
+          <p class="card-text">Home component works!</p>
+
+          <!-- Embed Child Component -->
+          <app-childcomponent [parentvalue]="sendSecond" (pushers)="receiver($event)"></app-childcomponent>
+
+          <hr>
+
+          <p class="card-text"><strong>Parent:</strong></p>
+          <p class="card-text"><strong>Data received from child:</strong> {{ Datareceived }}</p>
+          <p class="card-text"><strong>Sender data:</strong> {{ sendSecond }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
