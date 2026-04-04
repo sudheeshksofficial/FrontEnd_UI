@@ -1,0 +1,44 @@
+/* Navbar container */
+nav.navbar {
+  background: linear-gradient(90deg, #1e293b, #0f172a); // dark professional gradient
+  padding: 0.8rem 1.5rem;
+}
+
+/* Brand title */
+.app-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #38bdf8; // soft blue hover
+  }
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: #e2e8f0;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #38bdf8;
+  }
+
+  &.active {
+    color: #22c55e; // active link highlight
+  }
+}
+
+nav.navbar {
+  box-shadow: 0 4px 12px rgba(41, 241, 255, 0.911);
+}
+
+/* Toggler icon fix for dark navbar */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.2);
+}

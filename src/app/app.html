@@ -1,19 +1,26 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(90deg, #ff7e5f, #feb47b);">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold fs-4" routerLink="/">MyAngularApp</a>
+    
+    <a class="navbar-brand app-title" routerLink="/">
+      MyAngularApp
+    </a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li>
+        
         <li class="nav-item"><a class="nav-link" routerLink="/databinding">Data Binding</a></li>
-        <li class="nav-item"><a class="nav-link" routerLink="/components">Components</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/dataretriever">Data Retriever</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" routerLink="/components">Components</a></li> -->
+        <!-- <li class="nav-item"><a class="nav-link" routerLink="/">Home</a></li> -->
         <li class="nav-item"><a class="nav-link" routerLink="/about">About</a></li>
         <li class="nav-item"><a class="nav-link" routerLink="/contact">Contact</a></li>
       </ul>
     </div>
+
   </div>
 </nav>
 <router-outlet />

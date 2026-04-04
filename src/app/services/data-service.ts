@@ -1,12 +1,22 @@
-import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Injectable, OnInit } from '@angular/core';
+import { Employees } from '../models/employees';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
-export class DataService {
-  dataset : any[] = [
-    {id: 1, name: "John", age: 30},
-    {id: 2, name: "Jane", age: 25},
-    {id: 3, name: "Doe", age: 35}
-  ];
+export class DataService{
+
+   private apiUrl = 'http://localhost:3000/employees';
+
+
+  constructor(private httpData: HttpClient) {}
+
+  getData(): Observable<Employees[]> {
+    return this.httpData.get<Employees[]>(this.apiUrl);
+  }
+
+
+
 }
